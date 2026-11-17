@@ -8,19 +8,37 @@
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:#030711;color:#fff;font-family:Arial,sans-serif}
 body{display:flex;justify-content:center;align-items:flex-start}
-.host{position:relative;width:min(100%,1200px);margin:0 auto;line-height:0}
+.host{position:relative;width:min(100%,1200px);margin:0 auto;line-height:0;overflow:hidden}
 .host img{display:block;width:100%;height:auto}
-.goldhen-hotspot{
- position:absolute;left:48%;top:63%;width:23%;height:19%;
- display:block;background:transparent;border:0;outline:0;
+.menu-cleanup{
+ position:absolute;left:0;right:0;top:49.2%;height:21.2%;
+ display:flex;align-items:center;justify-content:center;
+ background:linear-gradient(180deg,rgba(0,0,0,.94),rgba(3,5,10,.98) 65%,rgba(0,0,0,.92));
 }
-.goldhen-hotspot:focus-visible{outline:2px solid #ffd34d;outline-offset:2px}
+.goldhen-button{
+ width:31%;height:72%;min-height:54px;
+ display:flex;align-items:center;justify-content:center;gap:.55em;
+ border:3px solid #f5bd32;border-radius:22px;
+ background:linear-gradient(145deg,#17130a,#050608 55%,#241700);
+ box-shadow:0 0 12px #e6a91d, inset 0 0 18px rgba(255,190,40,.2);
+ color:#ffd34d;text-decoration:none;
+ font-size:clamp(18px,3vw,34px);font-weight:800;line-height:1;
+ text-shadow:0 0 8px rgba(255,190,40,.55);
+}
+.goldhen-button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.goldhen-button:active{transform:scale(.98)}
+@media(max-width:600px){
+ .menu-cleanup{top:49.2%;height:21.2%}
+ .goldhen-button{width:43%;height:65%;border-width:2px;border-radius:14px}
+}
 </style>
 </head>
 <body>
 <main class="host">
  <img src="Meta_AI_AQOc3BoIQps1xd2S0_L69rdA-I165JJZxSqV9FDzdyWvui4XSSWODawA-gi0tHcCNrq47MEE-LMzjLqo86HLgM0G36vwfjOPdfAle1wK1VDAvXvEehy0HZRCtoCS_20261117_135053.jpg" alt="SADEEN PS4 Host - Firmware 14.02">
- <a class="goldhen-hotspot" href="jb.html?log=1&amp;afterglow=run&amp;mode=goldhen" aria-label="تشغيل GoldHEN 14.02" title="GoldHEN 14.02"></a>
+ <div class="menu-cleanup">
+  <a class="goldhen-button" href="jb.html?log=1&amp;afterglow=run&amp;mode=goldhen" aria-label="تشغيل GoldHEN 14.02" title="GoldHEN 14.02">GoldHEN</a>
+ </div>
 </main>
 </body>
 </html>
