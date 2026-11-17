@@ -3,92 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SADEEN PS4</title>
+<title>SADEEN PS4 Host - GoldHEN 14.02</title>
 <style>
 *{box-sizing:border-box}
-body{
- margin:0;background:#070b14;color:#fff;
- font-family:Arial,sans-serif;text-align:center;
+html,body{margin:0;min-height:100%;background:#030711;color:#fff;font-family:Arial,sans-serif}
+body{display:flex;justify-content:center;align-items:flex-start}
+.host{position:relative;width:min(100%,1200px);margin:0 auto;line-height:0}
+.host img{display:block;width:100%;height:auto}
+.goldhen-zone{
+ position:absolute;top:48.5%;left:4%;right:4%;height:21.5%;
+ display:flex;align-items:center;justify-content:center;
+ background:linear-gradient(90deg,rgba(0,5,18,.94),rgba(0,0,0,.90) 22%,rgba(0,0,0,.90) 78%,rgba(0,5,18,.94));
+ border-top:2px solid #e7b52e;border-bottom:2px solid #e7b52e;
+ box-shadow:0 0 22px rgba(0,160,255,.25),0 0 28px rgba(255,190,30,.25);
 }
-header{
- padding:35px 15px;
- background:linear-gradient(135deg,#101d35,#07101f);
- border-bottom:2px solid #168cff;
+.goldhen-btn{
+ display:flex;align-items:center;justify-content:center;gap:14px;
+ min-width:min(66%,440px);min-height:76px;padding:16px 30px;
+ color:#fff;text-decoration:none;font-size:clamp(25px,4vw,44px);font-weight:900;
+ letter-spacing:1px;border:3px solid #ffd34d;border-radius:18px;
+ background:linear-gradient(110deg,#06244a,#111827 48%,#4a3100);
+ box-shadow:0 0 12px #ffd34d,0 0 28px rgba(0,157,255,.65),inset 0 0 18px rgba(255,196,45,.25);
+ text-shadow:0 0 12px #ffc72e;
 }
-.logo{
- font-size:52px;font-weight:900;
- color:#29a8ff;letter-spacing:5px;
- text-shadow:0 0 20px #168cff;
+.goldhen-btn:active{transform:scale(.98)}
+.crown{color:#ffd34d;font-size:1.1em}
+@media(max-width:600px){
+ .goldhen-zone{top:48.5%;height:21.5%;left:3%;right:3%}
+ .goldhen-btn{min-width:70%;min-height:48px;padding:8px 12px;border-width:2px;border-radius:12px}
 }
-header p{color:#d3e8ff}
-.container{max-width:550px;margin:auto;padding:20px}
-.shop{
- width:100%;height:auto;display:block;
- border:2px solid #168cff;border-radius:18px;
- box-shadow:0 0 25px #168cff55;
-}
-.card{
- background:#121d30;border:1px solid #23436b;
- border-radius:18px;padding:22px;
- margin:22px 0;
-}
-h2{color:#31aaff}
-p{line-height:1.9}
-.btn{
- display:block;background:#087cff;color:white;
- padding:16px;border-radius:12px;
- text-decoration:none;font-weight:bold;
- margin-top:15px;
-}
-.btn:hover{background:#0059bd}
-footer{padding:25px;color:#8799b5}
 </style>
 </head>
 <body>
-
-<header>
- <div class="logo">SADEEN</div>
- <p>عالم البلايستيشن بين إيديك 🎮</p>
-</header>
-
-<div class="container">
-
-<img class="shop"
-src="Meta_AI_AQOc3BoIQps1xd2S0_L69rdA-I165JJZxSqV9FDzdyWvui4XSSWODawA-gi0tHcCNrq47MEE-LMzjLqo86HLgM0G36vwfjOPdfAle1wK1VDAvXvEehy0HZRCtoCS_20261117_135053.jpg"
-alt="صورة محل سدين">
-
-<div class="card">
-<h2>أهلاً وسهلاً بكم في محلات سدين</h2>
-<p>خدمات تعديل وصيانة أجهزة PlayStation</p>
-<p>تعديل أجهزة PS4 إصدار 14.02</p>
-</div>
-
-<div class="">
-<h2>🎮 GoldHEN 14.02</h2>
-<p>تشغيل GoldHEN لجهاز PS4 إصدار 14.02</p>
-<a class="btn"
-href="https://well0nez.github.io/afterglow-web/">
-تشغيل GoldHEN
-</a>
-</div>
-
-<div class="card">
-<h2>خدمات SADEEN</h2>
-<p>بيع وشراء وتبديل ألعاب</p>
-<p>صيانة أجهزة البلايستيشن</p>
-<p>صيانة أيدي PS4 وPS5</p>
-</div>
-
-<div class="card">
-<h2>📍 موقعنا</h2>
-<p>مادبا - مقابل فندق H</p>
-</div>
-
-</div>
-
-<footer>
-© SADEEN 2026
-</footer>
-
+<main class="host">
+ <img src="Meta_AI_AQOc3BoIQps1xd2S0_L69rdA-I165JJZxSqV9FDzdyWvui4XSSWODawA-gi0tHcCNrq47MEE-LMzjLqo86HLgM0G36vwfjOPdfAle1wK1VDAvXvEehy0HZRCtoCS_20261117_135053.jpg" alt="SADEEN PS4 Host - Firmware 14.02">
+ <div class="goldhen-zone">
+  <a class="goldhen-btn" href="jb.html?log=1&amp;afterglow=run&amp;mode=goldhen"><span class="crown">♛</span> GoldHEN <span class="crown">♛</span></a>
+ </div>
+</main>
 </body>
 </html>
